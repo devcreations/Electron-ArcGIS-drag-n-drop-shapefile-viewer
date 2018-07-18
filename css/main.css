@@ -1,0 +1,117 @@
+@import url("https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-rc.3/css/calcite-web.min.css");
+@import url("https://js.arcgis.com/4.3/esri/css/main.css");
+/*@import url("https://js.arcgis.com/4.8/esri/themes/dark-red/main.css"); */
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffa500;
+  overflow: hidden;
+}
+
+
+.header {
+  background-color: #ffa500;
+}
+
+.top-nav-title,
+.top-nav-link {
+  color: #ffa500;
+}
+
+.top-nav-link {
+  cursor: pointer;
+}
+
+
+.main,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dropping {
+  opacity: 0.5;
+}
+
+.esri-popup__main-container {
+  background-color: #ababab; !important;
+  color: #ababab; !important;
+  border-color:0 solid #121310; !important;
+  pointer-events:auto;
+  position:relative;
+  z-index:1;
+  width:340px;
+  max-height:300px;
+  padding-bottom:12px;
+  flex-flow:column nowrap
+}
+
+.esri-popup--is-docked-top-right {
+  height: 980px; !important;
+}
+
+.esri-popup__header {
+    background-color: #ababab !important;
+    color: #fff !important;
+}
+
+.esri-popup__header-buttons {
+    background-color: #ababab !important;
+    color: #000000 !important;
+}
+
+.esri-popup__footer-buttons {
+    background-color: #ababab !important;
+    color: #000000 !important;
+}
+
+.esri-icon-dock-right {
+  display:inline-block;
+  color: #fff !important;
+}
+
+.esri-icon-minimize:before{
+  content:"";
+  color: #fff !important;
+}
+
+.esri-icon-zoom-in-magnifying-glass:before{
+  content:"";
+  color: #fff !important;
+}
+
+#backdrop {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: table-cell;
+  vertical-align: middle;
+  background: #ffa500;
+  opacity: 0.5;
+}
+
+div.loader-container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
